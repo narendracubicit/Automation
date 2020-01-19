@@ -33,6 +33,7 @@ public class FacebookLoginPage {
 	
 	public void login_to_facebook(String uid,String pwd){
 		driver.navigate().to("https://facebook.com");
+		email.clear();
 		email.sendKeys(uid); 
 		password.sendKeys(pwd);
 		login_button.click(); } 
